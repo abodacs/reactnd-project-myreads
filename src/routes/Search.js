@@ -12,7 +12,6 @@ class Search extends Component{
   };
    //This method retrieve searched books
   submit = async (query, myReads) => {
-    console.log('query change!', query)
     query = query.trim();
     this.setState({ resultsBooks: [] , query })
     if (query !== '') {
